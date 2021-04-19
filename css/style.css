@@ -348,7 +348,7 @@ b, strong {
 }
 .timeline-yr span {
   color: #ffffff;
-  font-size: 16px;
+  font-size: 13px;
   font-weight: bold;
   display: block;
   line-height: 75px;
@@ -570,4 +570,72 @@ b, strong {
     display: inline-block;
     vertical-align: top;
   }
+}
+
+
+
+
+.typewriter h1 {
+  font-size: 16px;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .1em; /* Adjust as needed */
+  animation: 
+    typing 1.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+
+.timeline-yr2 {
+  /*background: #2b9ed3;*/
+  background: #474559;
+  border-radius: 100%;
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  line-height: 50;
+  text-align: center;
+}
+
+.timeline-yr2 span {
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: bold;
+  display: block;
+  line-height: 75px;
+}
+
+.timeline-info2 {
+  display: inline-block;
+  vertical-align: top;
+  /*max-width: 432px;*/
+  max-width: 100%;
+  margin-left: 6em;
+}
+
+.timeline-info2 small {
+  color: #474559;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 15px;
+}
+
+.card { 
+  background-color: transparent;
 }
